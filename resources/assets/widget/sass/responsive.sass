@@ -1,0 +1,43 @@
+@media (max-width: $mobileLarge)
+
+  #huntr-inner
+    .huntr-choices
+      display: none !important
+
+    .huntr-cta
+      &.huntr-upvote
+        width: 38% !important
+        right: auto
+        left: 0
+
+      &.huntr-review
+        width: 58% !important
+        left: auto
+        right: 0
+
+  #huntr-reviews
+    .huntr-reaction
+      display: none !important
+
+@media (max-width: $mobileSmall)
+
+  #huntr-inner
+
+    .huntr-cta
+      &.huntr-upvote
+        display: none !important
+
+      &.huntr-review
+        width: 100% !important
+
+@media (max-width: $mobileWidthHide)
+
+  #huntr-inner,
+  #huntr-button
+    display: none !important
+
+@media (max-height: $mobileHeightHide)
+
+  #huntr-inner,
+  #huntr-button
+    display: none !important
