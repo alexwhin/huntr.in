@@ -12,10 +12,10 @@
 
         <script type="text/javascript">
           window.huntr = {
-            slug: '<?php echo $_GET['slug'] ?>'
+            slug: '<?php echo (!empty($_GET['slug'])) ? $_GET['slug'] : '' ?>'
           };
           a = document.createElement('script');
-          a.src = 'https://592d8269.ngrok.io/widget/app.js';
+          a.src = '{!! url('/') !!}/widget/app.js';
           document.body.appendChild(a);
         </script>
 

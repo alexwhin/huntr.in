@@ -23,8 +23,8 @@
     brandingURL: 'https://huntr.in/',
     brandingText: 'Built with Huntr',
     productURL: 'https://www.producthunt.com/posts/',
-    productData: 'https://592d8269.ngrok.io/api/products/',
-    stylesheet: 'https://592d8269.ngrok.io/widget/app.css'
+    productData: 'http://192.168.0.68:3000/api/products/',
+    stylesheet: 'http://192.168.0.68:3000/widget/app.css'
   }
 
   /**
