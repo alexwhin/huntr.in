@@ -22,9 +22,10 @@
     ctaReviewText: 'Write Review',
     brandingURL: 'https://huntr.in/',
     brandingText: 'Built with Huntr',
+    serverURL: (true == true) ? 'http://192.168.0.68:3000/' : 'https://huntr.in/',
     productURL: 'https://www.producthunt.com/posts/',
-    productData: 'http://192.168.0.68:3000/api/products/',
-    stylesheet: 'http://192.168.0.68:3000/widget/app.css'
+    productData: 'api/products/',
+    stylesheet: 'widget/app.css'
   }
 
   /**

@@ -20,7 +20,7 @@
   /* Product data */
   if (load) {
     window.axios = axios
-    axios.get(settings.productData + settings.slug).then(function(response){
+    axios.get(settings.serverURL + settings.productData + settings.slug).then(function(response){
 
       new WidgetMarkup(response.data)
     });
