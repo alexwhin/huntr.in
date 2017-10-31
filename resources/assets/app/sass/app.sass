@@ -1,0 +1,188 @@
+$primary: #d95630
+$success: #d95630
+$radius: 2px
+$radius-small: 2px
+$radius-large: 2px
+
+@import "node_modules/bulma/bulma.sass"
+@import "checkboxes"
+
+body
+  background-color: #f9f9f9
+  overflow-y: auto
+  height: 100%
+  min-height: 100vh
+  padding: 0
+  margin: 0
+
+  .faded
+    opacity: 0.5
+
+    .hljs
+      background-color: #efefef
+      box-shadow: none !important
+
+    .copy
+      background-color: #efefef !important
+      color: #d0d0d0 !important
+
+      a
+        display: none !important
+
+  a.logo
+    font-family: 'Roboto Slab', serif
+    text-decoration: none
+    font-weight: 500
+    font-size: 1.4em
+    line-height: 1em
+    color: #d95630
+    padding: 0 0 0.3em
+
+  .hero
+    padding: 4.2em 3.5em 0 0
+
+    h1
+      font-family: 'Roboto Slab', serif
+      font-size: 1.6em
+      line-height: 1.6em
+
+    h2
+      color: #847f7f
+      font-size: 1em
+      line-height: 1.4em
+
+    .editor
+      position: relative
+      margin: 1.5em 0 0
+
+      .checkboxes
+        transition-duration: .2s
+        padding: 1em 0 0
+
+      .field
+        margin: 0.5em 0 0
+
+      h3
+        color: #4a4a4a
+        padding: 0 0 0.4em
+
+      label
+        color: #847f7f
+        font-size: 0.9em
+
+      .error-message
+        padding: 0.7em 0 0.4em
+        color: #d85631
+        font-size: 0.9em
+        font-weight: 400
+
+        strong
+          color: #d85631
+          font-weight: 600
+
+      .slug-selection
+        .slug-control
+          width: 100%
+
+          input
+            line-height: 0.9em
+            font-size: 0.9em
+            height: 33px
+            width: 100%
+
+        .button
+          background-color: #f9f9f9
+          color: #847f7f
+          font-size: 0.9em
+          line-height: 0.9em
+
+
+    .snippet
+      transition-duration: .2s
+      position: relative
+      padding: 1em 0 0
+
+      pre
+        background: none !important
+        max-width: 650px
+        display: block
+        width: 100%
+        padding: 0
+        margin: 0
+
+        .hljs
+          display: block
+          overflow-x: auto
+          padding: 1.7em 2.1em 1.7em
+          border-top-left-radius: 2px
+          border-top-right-radius: 2px
+          box-shadow: inset 0px 2px 0px #1b1d23
+
+          .hljs-name
+            color: #a9b1be
+
+      .copy
+        position: absolute
+        bottom: 10px
+        right: 0
+        left: 0
+        background-color: #d95630
+        color: #eca793
+        border-bottom-left-radius: 2px
+        border-bottom-right-radius: 2px
+        font-size: 0.8em
+        line-height: 2.5em
+        height: 32px
+        font-weight: 500
+        padding: 0 0.9em
+
+        a
+          position: absolute
+          color: #eca793
+          right: 3px
+          bottom: 3px
+          background-color: #ca4d29
+          border-radius: 2px
+          line-height: 26px
+          padding: 0 0.65em
+
+          &:hover
+            background-color: #c34d2b
+
+          &:focus, &:active
+            background-color: #c34d2b
+            opacity: 0.8
+
+  .example
+    padding: 6.5em 0 0
+
+    #huntr-example
+      position: relative
+      height: 600px
+      width: 100%
+
+      &.hidden-reviews-count
+        #huntr-button
+          #huntr-text
+            display: none !important
+
+    #huntr-button
+      position: absolute
+
+    #huntr-inner
+      position: absolute
+      height: 100vh
+      max-height: 548px
+      min-height: 548px
+      width: 100%
+      max-width: calc(100% - 50px)
+      min-width: calc(100% - 50px)
+
+  hr
+    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0
+    padding: 2em 0 0
+    overflow: hidden
+    margin: 2em 0 0
+    opacity: 0.5
+    height: 4px
+    border: 0

@@ -26,23 +26,8 @@
       if (contentHeight < 10) { // no reviews
 
         document.getElementById(settings.containers.content).className = 'no-reviews'
-        contentHeight = 88
-
-      } else {
-
-        if (contentHeight > (windowHeight + 45)) contentHeight = (windowHeight - 120)
-        if (contentHeight > settings.widgetHeight) contentHeight = settings.widgetHeight
-        if (contentHeight < 320) contentHeight = 312
-        if (windowHeight < 425) contentHeight = 200
+        this.setContentHeight(86)
       }
-
-      let contentWidth = (windowWidth < settings.widgetWidth) ? '90%' : settings.widgetWidth + 'px'
-      if (windowWidth < 700 && windowHeight < 400) contentWidth = '92%' // landscape
-      if (windowWidth < 380 && windowHeight < 700) contentWidth = '87%' // landscape
-      if (windowWidth < 415 && windowHeight > 700) contentWidth = '88.5%' // iPhone 6P
-
-      this.setContentHeight(contentHeight)
-      this.setContentWidth(contentWidth)
     }
 
     /**
@@ -68,17 +53,6 @@
 
       let container = document.getElementById(settings.containers.inner)
           container.style.height = height + 'px'
-    }
-
-    /**
-     * Set widget width
-     *
-     * @param {int} width
-     */
-    setContentWidth(width) {
-
-      let container = document.getElementById(settings.containers.inner)
-          container.style.width = width
     }
 
   }

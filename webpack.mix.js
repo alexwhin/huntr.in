@@ -6,8 +6,8 @@
 
      // Application
      .js('resources/assets/app/js/app.js', 'public/app/js')
-     .sass('resources/assets/app/sass/app.scss', 'public/app/css')
+     .sass('resources/assets/app/sass/app.sass', 'public/app/css')
 
-     // Embeddable Widget
-     .js('resources/assets/widget/js/app.js', 'public/widget/')
+     // Widget
+     .js('resources/assets/widget/js/app.js', 'public/x.js')
      .sass('resources/assets/widget/sass/app.sass', 'public/widget/');

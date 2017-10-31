@@ -30,13 +30,33 @@
 
         /* Button click */
         document.getElementById(settings.containers.button).addEventListener("click", function(){
-
-          document.getElementById(settings.containers.button).classList.toggle("huntr-active")
-          document.getElementById(settings.containers.inner).classList.toggle("huntr-active")
-
+          this.openWidget()
           new WidgetSize()
-        });
+        }.bind(this));
+
+        if (settings.exampleWidget) this.startExampleWidget() // demo
       }
+    }
+
+    /**
+     * Open widget
+     *
+     */
+    openWidget() {
+      document.getElementById(settings.containers.button).classList.toggle("huntr-active")
+      document.getElementById(settings.containers.inner).classList.toggle("huntr-active")
+    }
+
+    /**
+     * Example widget demo
+     *
+     */
+    startExampleWidget() {
+      setTimeout(() => {
+
+        this.openWidget()
+
+      }, 1000);
     }
 
     /**
@@ -186,7 +206,13 @@
 
       const huntr = document.createElement('div')
             huntr.innerHTML = markup
-            document.body.appendChild(huntr)
+
+      /* Landing page example */
+      if (settings.exampleWidget) {
+        document.getElementById(settings.containers.example).innerHTML = markup
+      } else {
+        document.body.appendChild(huntr)
+      }
     }
 
     /**

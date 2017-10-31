@@ -8,7 +8,7 @@
   <style>
   html, body {
     font-family: 'Raleway', sans-serif;
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 60px 0 30px
     text-align: center
     font-weight: 100;
@@ -20,18 +20,17 @@
 </head>
 <body>
 
-  @if (config('app.env') == 'local')
-    <script> window.localhost = true </script>
-  @endif
-
   <script type="text/javascript">
     window.huntr = {
       slug: '<?php echo (!empty($_GET['slug'])) ? $_GET['slug'] : '' ?>'
     };
     a = document.createElement('script');
-    a.src = '{{ url('/') }}/widget/app.js';
+    a.src = '{{ url('/') }}/x.js';
     document.body.appendChild(a);
   </script>
+  @if (config('app.env') == 'local')
+    <script> window.localhost = true </script>
+  @endif
 
 </body>
 </html>

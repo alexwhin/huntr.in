@@ -22,6 +22,16 @@ class PublicController extends Controller
    *
    * @return Response
    */
+  public function landing()
+  {
+      return view('landing');
+  }
+
+  /**
+   * Show the profile for the given user.
+   *
+   * @return Response
+   */
   public function example()
   {
       return view('example');
