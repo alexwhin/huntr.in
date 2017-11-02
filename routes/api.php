@@ -14,4 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::get('products/{slug}', 'ProductsController@show');
-Route::get('products/scrape/{slug}', 'ProductsController@scrape');
+Route::get('products/fetch/{slug}', 'ProductsController@fetch');

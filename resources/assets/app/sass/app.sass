@@ -6,25 +6,38 @@ $radius-large: 2px
 
 @import "node_modules/bulma/bulma.sass"
 @import "checkboxes"
+@import "stripe"
 
 body
-  background-color: #f9f9f9
+  background-image: url('/images/back.jpg')
+  background-position: top center
+  background-color: #f4f4f4
+  background-size: cover
+  min-height: 100vh
   overflow-y: auto
   height: 100%
-  min-height: 100vh
   padding: 0
   margin: 0
 
+  .white
+    background-color: #f4f4f4
+    position: relative
+    min-height: 500px
+    width: 100%
+
   .faded
-    opacity: 0.5
+    .hljs, .copy, span, label, strong, font,
+      color: #dadada !important
+
+    input[type='checkbox'] + label > span
+      border-color: #e4e4e4 !important
 
     .hljs
-      background-color: #efefef
+      background-color: #f9f9f9
       box-shadow: none !important
 
     .copy
-      background-color: #efefef !important
-      color: #d0d0d0 !important
+      background-color: #f9f9f9 !important
 
       a
         display: none !important
@@ -71,10 +84,11 @@ body
         font-size: 0.9em
 
       .error-message
-        padding: 0.7em 0 0.4em
-        color: #d85631
+        padding: 0.9em 0 0.5em
+        text-align: left
         font-size: 0.9em
         font-weight: 400
+        color: #d85631
 
         strong
           color: #d85631
@@ -89,6 +103,9 @@ body
             font-size: 0.9em
             height: 33px
             width: 100%
+
+            &:focus
+              box-shadow: none
 
         .button
           background-color: #f9f9f9
@@ -179,10 +196,10 @@ body
       min-width: calc(100% - 50px)
 
   hr
-    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0
-    padding: 2em 0 0
+    background: url('/images/hr.png') repeat-x 0 0
+    padding: 2.5em 0 0
     overflow: hidden
-    margin: 2em 0 0
-    opacity: 0.5
+    margin: 2.5em 0 0
+    opacity: 0.4
     height: 4px
     border: 0

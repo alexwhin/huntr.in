@@ -30,8 +30,14 @@
       </div>
     </div>
 
-    <div class="container">
-      <hr>
+    <hr>
+
+    <div class="white">
+
+      <div class="container">
+        Something
+      </div>
+
     </div>
 
   </div>
@@ -39,6 +45,7 @@
   <link href="app/css/app.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <script src="https://js.stripe.com/v3/"></script>
   <script src="app/js/app.js"></script>
 
   @if (config('app.env') == 'local')

@@ -13,7 +13,8 @@
   class ScrapeProduct
   {
 
-    public $error = false;
+    public $limit = false,
+           $error = false;
 
     private $productUpvotes,
             $goutte,
@@ -30,12 +31,19 @@
 
       $this->slug = trim(strtolower($slug));
 
+      /* Prevent too many requests */
+      if ($this->canCheckFromLimit() === false) {
+
+        $this->limit = true;
+        return false;
+      }
+
       /* Scraper setup */
       $this->goutte = new Client([
         'http_errors' => false
       ]);
       $guzzle = new GuzzleClient([
-        'timeout' => 10
+        'timeout' => 8
       ]);
       $this->goutte->setClient($guzzle);
 
@@ -64,6 +72,23 @@
         $reviews = $this->getReviews($newProductID, $productData);
         $this->createReviews($newProductID, $reviews);
       }
+    }
+
+    /**
+     * Check requests
+     *
+     */
+    private function canCheckFromLimit()
+    {
+
+      $product = Products::where('slug', $this->slug)->count();
+      if ($product == 0) return true; // not in system continue
+
+      $product = Products::where('slug', $this->slug)
+                           ->where('updated_at', '<', Carbon::now()->subHours(1))
+                           ->count();
+
+      return ($product == 0) ? false : true;
     }
 
     /**

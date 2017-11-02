@@ -80,19 +80,25 @@ class ProductsController extends Controller
      }
 
     /**
-     * Scrape product / review data
+     * Fetch product / review data
      *
      * @param string $slug
      * @return \Illuminate\Http\Response
     */
-    public function scrape($slug)
+    public function fetch($slug)
     {
 
         $scrape = (new ScrapeProduct($slug));
 
-        return (!$scrape->error) ? $this->show($slug) : [
-          'error' => $scrape->error
-        ];
+        if ($scrape->error !== false) {
+          $response = ['error' => $scrape->error];
+        } else if ($scrape->limit !== false) {
+          $response = ['warning' => 'Too many requests to the same product slug'];
+        } else {
+          $response = $this->show($slug);
+        }
+
+        return $response;
     }
 
     /**
