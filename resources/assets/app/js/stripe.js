@@ -111,13 +111,7 @@ function registerElements(elements, exampleName) {
 //
 
 
-  var elements = stripe.elements({
-    fonts: [
-      {
-        cssSrc: "https://rsms.me/inter/inter-ui.css"
-      }
-    ]
-  })
+  var elements = stripe.elements()
 
   /**
    * Card Element
@@ -151,7 +145,7 @@ function registerElements(elements, exampleName) {
     country: "US",
     currency: "usd",
     total: {
-      amount: 2000,
+      amount: 500,
       label: "Total"
     }
   })

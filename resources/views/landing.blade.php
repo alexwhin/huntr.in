@@ -23,7 +23,7 @@
         </div>
 
         <div class="column">
-          <div class="example">
+          <div class="huntr-example">
             <div id="huntr-example"></div>
           </div>
         </div>
