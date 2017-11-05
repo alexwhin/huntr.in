@@ -12,7 +12,7 @@
 
   // Servers
   host('production')
-  ->hostname('104.131.129.172')
+  ->hostname('165.227.107.164')
   ->user('root')
   ->identityFile('~/.ssh/id_rsa')
   ->forwardAgent(true)
