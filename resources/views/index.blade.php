@@ -25,5 +25,13 @@
 
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43130225-8"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-43130225-8');
+      </script>
+
     </body>
 </html>
