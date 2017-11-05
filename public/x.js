@@ -1171,7 +1171,7 @@ if (__WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].onlySho
 /* Product data */
 if (load) {
   window.axios = __WEBPACK_IMPORTED_MODULE_0_axios___default.a;
-  __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(__WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].serverURL + __WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].productData + __WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].slug).then(function (response) {
+  __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(__WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].serverURL + __WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].productData + __WEBPACK_IMPORTED_MODULE_1__includes_settings__["a" /* settings */].slug + '.json').then(function (response) {
 
     new __WEBPACK_IMPORTED_MODULE_3__includes_widget_markup__["a" /* default */](response.data);
   });
@@ -1709,7 +1709,7 @@ var WidgetReload = function WidgetReload() {
     if (window.HuntrReloadSlug !== false) {
 
       __WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].slug = window.HuntrReloadSlug;
-      axios.get(__WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].serverURL + __WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].productData + __WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].slug).then(function (response) {
+      axios.get(__WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].serverURL + __WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].productData + __WEBPACK_IMPORTED_MODULE_0__settings__["a" /* settings */].slug + '.json').then(function (response) {
 
         new __WEBPACK_IMPORTED_MODULE_1__widget_markup__["a" /* default */](response.data);
       });

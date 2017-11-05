@@ -11,7 +11,7 @@
         if (window.HuntrReloadSlug !== false) {
 
           settings.slug = window.HuntrReloadSlug
-          axios.get(settings.serverURL + settings.productData + settings.slug).then(function(response){
+          axios.get(settings.serverURL + settings.productData + settings.slug + '.json').then(function(response){
 
             new WidgetMarkup(response.data)
           });

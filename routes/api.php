@@ -13,5 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('products/{slug}', 'ProductsController@show');
-Route::get('products/fetch/{slug}', 'ProductsController@fetch');
+Route::get('products/{slug}.json', 'ProductsController@show');
+Route::get('products/fetch/{slug}.json', 'ProductsController@fetch');
