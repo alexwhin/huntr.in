@@ -40,7 +40,10 @@ class ScrapeProduct extends Command
     public function handle()
     {
 
-        $products = Products::where('updated_at', '<', Carbon::now()->subHours(2))->get();
+        $products = Products::where('updated_at', '<', Carbon::now()
+                              ->subHours(3))
+                              ->inRandomOrder()
+                              ->get();
 
         $count = 0;
         foreach ($products as $key => $product) {
@@ -48,7 +51,7 @@ class ScrapeProduct extends Command
           /* Update product from scrape */
           if ($product->slug !== 'example') app('App\Http\Controllers\ProductsController')->fetch($product->slug);
 
-          if ($count > 3) break;
+          if ($count == 3) break;
           $count++;
         }
     }
