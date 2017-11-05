@@ -6,6 +6,9 @@
   // Configuration
   set('repository', 'git@github.com:alexwhin/huntr.in.git');
   set('keep_releases', 1);
+  add('shared_folders', [
+    'storage'
+  ]);
   add('shared_files', [
     '.env'
   ]);
