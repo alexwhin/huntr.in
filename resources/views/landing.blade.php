@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Product Hunt Reviews Widget - Huntr.in</title>
-  <meta name="google-site-verification" content="O9gKtHAGgu_gPlhVAHQ_6YWGdOLTP_vLBCjSlomzeBA" />
+  <link rel="icon" type="image/png" href="images/fav.png" />
 </head>
 <body>
 
