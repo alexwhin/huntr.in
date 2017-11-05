@@ -220,7 +220,7 @@
           this.slugError = false
           this.widgetReloading = true
 
-          axios.get('/api/products/fetch/' + slug).then(function (response) {
+          axios.get('/api/products/fetch/' + slug + '.json').then(function (response) {
 
             if (!response.data['error']) {
               window.HuntrReloadSlug = slug
