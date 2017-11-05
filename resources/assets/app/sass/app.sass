@@ -1,11 +1,13 @@
+$mobile-breakpoint: 1215px
+$radius-small: 2px
+$radius-large: 2px
 $primary: #d95630
 $success: #d95630
 $radius: 2px
-$radius-small: 2px
-$radius-large: 2px
 
 @import "node_modules/bulma/bulma.sass"
 @import "checkboxes"
+@import "responsive"
 
 body
   background-color: #f4f4f4
@@ -19,6 +21,7 @@ body
     background-color: #f4f4f4
     position: relative
     min-height: 500px
+    padding-top: 4em
     width: 100%
 
   .faded
@@ -62,7 +65,7 @@ body
 
     .editor
       position: relative
-      margin: 1.5em 0 0
+      margin: 2em 0 0
 
       .checkboxes
         transition-duration: .2s
@@ -121,7 +124,7 @@ body
     .snippet
       transition-duration: .2s
       position: relative
-      padding: 1em 0 0
+      padding: 3em 0 0
 
       pre
         background: none !important
@@ -208,9 +211,26 @@ body
 
   hr
     background: url('/images/hr.png') repeat-x 0 0
-    padding: 2.5em 0 0
+    padding: 3em 0 0
     overflow: hidden
-    margin: 2.5em 0 0
+    margin: 3em 0 0
     opacity: 0.4
     height: 4px
     border: 0
+
+  .foot
+    padding: 0.5em 0 3em
+    text-align: center
+    font-size: 0.9em
+    color: #888383
+    margin: 0
+
+    em
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      color: #d95630
+
+    .under
+      padding: 0.5em 0 0
+      display: block
+      opacity: 0.4

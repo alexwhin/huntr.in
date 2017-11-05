@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="editor">
-      <h3>What product are you working on?</h3>
 
       <div class="field has-addons slug-selection">
         <p class="control">

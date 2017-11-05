@@ -15,7 +15,7 @@
       <div class="columns">
         <div class="column">
           <div class="hero">
-            <a href="#" class="logo">huntr</a>
+            <a href="https://huntr.in/" title="Product Hunt Reviews Widget" class="logo">huntr</a>
             <h1>Product Hunt Reviews Widget</h1>
             <h2>Improve product trust &amp; encourage reviews... for free 🙀</h2>
 
@@ -29,14 +29,16 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <hr>
+      <hr>
 
-    <div class="white">
-
-      <div class="container">
-        Something
+      <div class="foot">
+        <p>
+          <em>huntr</em> &copy; 2017 &nbsp; Questions or enquiries? Tweet <a href="https://twitter.com/@alex_whin" target="_blank">@alex_whin</a> or email <a href="mailto:hello@huntr.in">hello@huntr.in</a>
+          <span class="under">
+            Not directly affiliated with ProductHunt
+          </span>
+        </p>
       </div>
 
     </div>
