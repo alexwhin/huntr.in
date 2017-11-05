@@ -3,6 +3,7 @@
   import {settings} from './includes/settings'
   import Stylesheet from './includes/stylesheet'
   import WidgetMarkup from './includes/widget-markup'
+  import WidgetReload from './includes/widget-reload'
 
   new Stylesheet()
 
@@ -25,3 +26,6 @@
       new WidgetMarkup(response.data)
     });
   }
+
+  /* Reloader (Landing Page) */
+  new WidgetReload()

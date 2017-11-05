@@ -6,7 +6,6 @@ $radius-large: 2px
 
 @import "node_modules/bulma/bulma.sass"
 @import "checkboxes"
-@import "stripe"
 
 body
   background-color: #f4f4f4
@@ -92,6 +91,14 @@ body
           font-weight: 600
 
       .slug-selection
+        .is-loading
+          &::after
+            top: 0.55em
+            z-index: 4
+            border-color: #d85631
+            border-right-color: transparent
+            border-top-color: transparent
+
         .slug-control
           width: 100%
 
@@ -168,7 +175,7 @@ body
             opacity: 0.8
 
   .huntr-example
-    padding: 6.5em 0 0
+    padding: 4.9em 0 0
 
     #huntr-example
       position: relative
@@ -186,11 +193,18 @@ body
     #huntr-inner
       position: absolute
       height: 100vh
-      max-height: 548px
-      min-height: 548px
+      max-height: 534px
+      min-height: 534px
       width: 100%
       max-width: calc(100% - 50px)
       min-width: calc(100% - 50px)
+
+      &.one
+        max-height: 86px
+        min-height: 86px
+
+        #huntr-reviews
+          border-top: none !important
 
   hr
     background: url('/images/hr.png') repeat-x 0 0

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Product Hunt Reviews Widget - Huntr.in</title>
+  <meta name="google-site-verification" content="O9gKtHAGgu_gPlhVAHQ_6YWGdOLTP_vLBCjSlomzeBA" />
 </head>
 <body>
 
@@ -45,7 +46,6 @@
   <link href="app/css/app.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
-  <script src="https://js.stripe.com/v3/"></script>
   <script src="app/js/app.js"></script>
 
   @if (config('app.env') == 'local')
@@ -54,7 +54,7 @@
 
   <script type="text/javascript">
     window.huntr = {
-      slug: 'listenonrepeat',
+      slug: 'example',
       exampleWidget: true
     };
     a = document.createElement('script');

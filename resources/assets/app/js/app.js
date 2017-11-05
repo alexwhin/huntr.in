@@ -20,8 +20,3 @@ Vue.component('widget-editor', require('./components/WidgetEditor.vue'))
 const app = new Vue({
   el: '#app'
 })
-
-/**
- * Stripe Functionality
- */
-require('./stripe')

@@ -279,6 +279,8 @@
       /* Loop reviews */
       for(var i = 0; i < reviews.length; i++) {
 
+        let reviewString = (reviews[i].review !== '') ? '<p class="under">' + reviews[i].review + '</p>' : ''
+
         markup += '<li>' +
                     '<div class="huntr-reaction positive">' +
                       this.getUserSmiley(reviews[i]) +
@@ -293,9 +295,7 @@
                     '<div class="huntr-review">' +
                       '<p><strong>Pros:</strong> ' + reviews[i].pros + '</p>' +
                       '<p><strong>Cons:</strong> ' + reviews[i].cons + '</p>' +
-                      '<p class="under">' +
-                         reviews[i].review +
-                      '</p>' +
+                      reviewString +
                     '</div>' +
                   '</li>'
       }

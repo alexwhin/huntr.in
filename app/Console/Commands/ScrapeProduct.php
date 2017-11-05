@@ -46,7 +46,7 @@ class ScrapeProduct extends Command
         foreach ($products as $key => $product) {
 
           /* Update product from scrape */
-          app('App\Http\Controllers\ProductsController')->scrape($product->slug);
+          if ($product->slug !== 'example') app('App\Http\Controllers\ProductsController')->scrape($product->slug);
 
           if ($count > 3) break;
           $count++;
