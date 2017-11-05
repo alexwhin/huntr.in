@@ -5,8 +5,9 @@
 
     RewriteEngine On
 
-    RewriteCond %{HTTPS_HOST} ^www\.(.*)$ [NC]
-    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+    RewriteCond %{SERVER_PORT} 443
+    RewriteCond %{HTTP_HOST} ^www[.].+$
+    RewriteRule ^(.*)$ https://huntr.in/$1 [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
