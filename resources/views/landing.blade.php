@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/png" href="images/fav.png" />
   <title>Product Hunt Reviews Widget - Huntr.in</title>
-  <meta property="og:title" content="Product Hunt Reviews Widget - Huntr.in">
-  <meta property="og:description" content="Improve product trust and encourage reviews... for free 🙀">
-  <meta property="og:image" content="https://huntr.in/images/shot.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@alex_whin">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@alex_whin" />
+  <meta name="twitter:creator" content="@alex_whin" />
+  <meta property="og:url" content="https://huntr.in/" />
+  <meta property="og:title" content="Product Hunt Reviews Widget - Huntr.in" />
+  <meta property="og:description" content="Improve product trust and encourage reviews... for free 🙀" />
+  <meta property="og:image" content="https://huntr.in/images/shot.jpg" />
 </head>
 <body>
 
