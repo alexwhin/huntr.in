@@ -8,7 +8,7 @@
   <title>Product Hunt Reviews Widget - Huntr.in</title>
   <meta property="og:title" content="Product Hunt Reviews Widget - Huntr.in">
   <meta property="og:description" content="Improve product trust and encourage reviews... for free 🙀">
-  <meta property="og:image" content="https://feathericons.com/assets/feather-preview.png">
+  <meta property="og:image" content="https://huntr.in/images/preview.gif">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@alex_whin">
 </head>
