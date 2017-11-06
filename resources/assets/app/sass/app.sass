@@ -1,4 +1,6 @@
 $mobile-breakpoint: 1215px
+$mobile-breakpoint-2: 780px
+$mobile-breakpoint-3: 500px
 $radius-small: 2px
 $radius-large: 2px
 $primary: #d95630
@@ -16,6 +18,13 @@ body
   height: 100%
   padding: 0
   margin: 0
+
+  em.tablet-text
+    font-style: normal
+
+  .desktop-text,
+  .tablet-text
+    display: inline
 
   .white
     background-color: #f4f4f4
@@ -65,7 +74,7 @@ body
 
     .editor
       position: relative
-      margin: 2em 0 0
+      margin: 1.7em 0 0
 
       .checkboxes
         transition-duration: .2s
@@ -119,12 +128,13 @@ body
           color: #847f7f
           font-size: 0.9em
           line-height: 0.9em
+          height: 33px
 
 
     .snippet
       transition-duration: .2s
       position: relative
-      padding: 3em 0 0
+      padding: 1.5em 0 0
 
       pre
         background: none !important
@@ -162,23 +172,25 @@ body
 
         a
           position: absolute
-          color: #eca793
+          color: #fff
           right: 3px
           bottom: 3px
           background-color: #ca4d29
           border-radius: 2px
           line-height: 26px
           padding: 0 0.65em
+          font-weight: 600
 
           &:hover
             background-color: #c34d2b
+            color: #eca793
 
           &:focus, &:active
             background-color: #c34d2b
             opacity: 0.8
 
   .huntr-example
-    padding: 4.9em 0 0
+    padding: 2.7em 0 0
 
     #huntr-example
       position: relative
@@ -196,8 +208,8 @@ body
     #huntr-inner
       position: absolute
       height: 100vh
-      max-height: 534px
-      min-height: 534px
+      max-height: 472px
+      min-height: 472px
       width: 100%
       max-width: calc(100% - 50px)
       min-width: calc(100% - 50px)
@@ -211,26 +223,31 @@ body
 
   hr
     background: url('/images/hr.png') repeat-x 0 0
-    padding: 3em 0 0
+    padding: 2em 0 0
     overflow: hidden
-    margin: 3em 0 0
-    opacity: 0.4
+    margin: 2em 0 0
+    opacity: 0.2
     height: 4px
     border: 0
 
   .foot
-    padding: 0.5em 0 3em
+    padding: 0 0 4em
     text-align: center
     font-size: 0.9em
-    color: #888383
+    color: #959292
     margin: 0
 
-    em
-      font-family: 'Roboto Slab', serif
-      font-style: normal
-      color: #d95630
+    .column
+      text-align: left
 
-    .under
-      padding: 0.5em 0 0
-      display: block
-      opacity: 0.4
+      &.right
+        text-align: right
+
+      em
+        font-family: 'Roboto Slab', serif
+        font-style: normal
+        color: #d95630
+
+      span
+        &.affiliated
+          opacity: 0.4

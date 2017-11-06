@@ -5,7 +5,7 @@
       <div class="field has-addons slug-selection">
         <p class="control">
           <a class="button is-static">
-            https://producthunt.com/posts/
+            <span class="tablet-text">https://</span>producthunt.com/posts/
           </a>
         </p>
         <p class="control slug-control" v-bind:class="{ 'is-loading': widgetReloading }">
@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="error-message" v-if="slugError">
-        Please enter a valid product (e.g producthunt.com/<strong>my-product</strong>)
+        Please enter a valid product slug <span class="tablet-text">(e.g producthunt.com/<strong>my-product</strong>)</span>
       </div>
 
       <div class="checkboxes" v-bind:class="{ faded: slugError }">
@@ -21,7 +21,7 @@
           <input v-model="settings.onlyShowOnParam" @change="updateWidgetCode" id="onlyShowOnParam" type="checkbox" />
           <label for="onlyShowOnParam">
             <span></span>
-            Only load when&nbsp;<font color="#d85631">?ref=producthunt</font>&nbsp;appears in URL
+            Only load when&nbsp;<font color="#d85631">?ref=producthunt</font>&nbsp;<em class="tablet-text">appears in URL</em>
           </label>
         </div>
         <div class="field">
@@ -58,7 +58,9 @@
         <code class="javascript"></code>
       </pre>
       <div class="copy">
-        Embed product hunt reviews by pasting the above into your site
+        <span class="tablet-text">
+          Copy and paste the widget code into your site
+        </span>
         <a v-clipboard="widgetCode">Copy</a>
       </div>
     </div>

@@ -1,6 +1,86 @@
 @media (max-width: $mobile-breakpoint)
-  .desktop-text
-    display: none
+  hr
+    margin: 0 2em 0 !important
+    padding: 1.4em 0 0 !important
 
   .hero
-    padding: 4.4em 1em 0 0
+    padding: 2.1em 0 0 0 !important
+
+  .snippet
+    padding: 0.4em 0 0 !important
+
+    pre
+      max-width: 100% !important
+
+  .huntr-example
+    padding: 0 !important
+
+    #huntr-example
+      height: 350px !important
+      margin: 0 0 0 -25px
+
+    #huntr-inner
+      max-height: 238px !important
+      min-height: 238px !important
+      max-width: calc(100% - 1px) !important
+      min-width: calc(100% - 1px) !important
+
+  .split-columns
+    display: block !important
+    padding: 0 2em 0
+
+  .foot
+    margin: 0 2em 0 !important
+
+    span
+      &.affiliated
+        display: none
+
+@media (max-width: $mobile-breakpoint-2)
+  .desktop-text
+    display: none !important
+
+  hr
+    padding: 2em 0 0 !important
+
+  .foot
+    .columns
+      display: block
+
+      .column
+        text-align: center !important
+
+        &.right
+          margin-top: -18px
+
+@media (max-width: $mobile-breakpoint-3)
+  .container
+    overflow: hidden
+
+  .tablet-text
+    display: none !important
+
+  .slug-control
+    input
+      line-height: 1 !important
+
+  .hero
+    h1
+      line-height: 1.8em !important
+      font-size: 1.3em !important
+
+    h2
+      line-height: 1.2em !important
+      font-size: 0.9em !important
+
+  .editor
+    .error-message
+      font-weight: 500 !important
+
+  .snippet
+    .copy
+      a
+        text-align: center
+        width: auto
+        right: 4px
+        left: 4px
