@@ -22,7 +22,7 @@
     ctaReviewText: 'Write Review',
     brandingURL: 'https://huntr.in/',
     brandingText: 'powered by huntr.in',
-    serverURL: (window.localhost) ? 'http://localhost:3000/' : 'https://huntr.in/',
+    serverURL: (window.localhost) ? 'http://localhost:3000/' : '//huntr.in/',
     productURL: 'https://www.producthunt.com/posts/',
     productData: 'api/products/',
     stylesheet: 'widget/app.css'

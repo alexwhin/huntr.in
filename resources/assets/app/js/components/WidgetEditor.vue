@@ -165,7 +165,7 @@
                    "  " + this.settingsString +
                    "  };\n" +
                    "  a = document.createElement('script');\n" +
-                   "  a.src = 'https://huntr.in/x.js';\n" +
+                   "  a.src = '//huntr.in/x.js';\n" +
                    "  document.body.appendChild(a);\n" +
                    "<\/script>"
 
