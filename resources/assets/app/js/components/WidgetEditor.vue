@@ -9,7 +9,7 @@
           </a>
         </p>
         <p class="control slug-control" v-bind:class="{ 'is-loading': widgetReloading }">
-          <input v-model="settings.slug" v-on:focus="slugError = false" @change="updateWidgetCode" v-bind:class="{ error: slugError }" name="slug" class="input" type="text" placeholder="my-product">
+          <input id="product-slug" v-model="settings.slug" v-on:focus="slugError = false" @change="updateWidgetCode" v-bind:class="{ error: slugError }" name="slug" class="input" type="text" placeholder="my-product">
         </p>
       </div>
       <div class="error-message" v-if="slugError">

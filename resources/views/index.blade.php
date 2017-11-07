@@ -1,37 +1,117 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Huntr.in</title>
-        <meta name="google-site-verification" content="O9gKtHAGgu_gPlhVAHQ_6YWGdOLTP_vLBCjSlomzeBA" />
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                text-align: center;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                padding: 60px 0 30px;
-                margin: 0;
-            }
-        </style>
-    </head>
-    <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="images/fav.png" />
+  <title>Product Hunt Reviews Widget - Huntr.in</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@alex_whin" />
+  <meta name="twitter:creator" content="@alex_whin" />
+  <meta property="og:url" content="https://huntr.in/" />
+  <meta property="og:title" content="Product Hunt Reviews Widget - Huntr.in" />
+  <meta property="og:description" content="Improve product trust and encourage reviews... for free 🙀" />
+  <meta property="og:image" content="https://huntr.in/images/shot.jpg" />
+</head>
+<body>
 
-      ⚡️ Huntr.in - Under Development
+  <div id="app">
 
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <div class="container">
+      <div class="columns split-columns">
+        <div class="column">
+          <div class="hero">
+            <a href="https://huntr.in/" title="Product Hunt Reviews Widget" class="logo">huntr</a>
+            <h1>Product Hunt Reviews Widget</h1>
+            <h2>Improve product trust <span class="tablet-text">&amp; encourage reviews</span>... for free 🙀</h2>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43130225-8"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-43130225-8');
-      </script>
+            <widget-editor></widget-editor>
+          </div>
+        </div>
 
-    </body>
+        <div class="column">
+          <div class="huntr-example">
+            <div id="huntr-example"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section slant">
+      <div class="container">
+        <div class="columns split-columns">
+          <div class="column preview-column">
+            <img src="images/instaaa.gif" class="preview" />
+            <p>
+              Screenshot provided by <a href="https://instaaa.com" target="_blank">Instaaa</a>
+            </p>
+          </div>
+          <div class="column">
+            <div class="features">
+              <h3>
+                Embeds directly into your product
+              </h3>
+              <ul>
+                <li>Design will morph depending on review count</li>
+                <li>Data is sourced directly from Product Hunt</li>
+                <li>Super lightweight code loads async ⚡️</li>
+                <li>Works on any platform</li>
+                <li>... and it's free</li>
+              </ul>
+              <a onclick="document.getElementById('product-slug').focus();" href="#" class="button">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="foot">
+          <div class="columns">
+            <div class="column">
+              <em>huntr</em> &copy; 2017 &nbsp; <span class="affiliated">Not directly affiliated with ProductHunt</span>
+            </div>
+            <div class="column right">
+              <a href="https://twitter.com/@alex_whin" target="_blank">@alex_whin</a> &nbsp;<span class="affiliated">|</span>&nbsp; <a href="mailto:hello@huntr.in">hello@huntr.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <link href="app/css/app.css" rel="stylesheet">
+  <script src="app/js/app.js"></script>
+
+  @if (config('app.env') == 'local')
+    <script> window.localhost = true </script>
+  @endif
+
+  <script type="text/javascript">
+    window.huntr = {
+      slug: 'example',
+      exampleWidget: true
+    };
+    a = document.createElement('script');
+    a.src = '{{ url('/') }}/x.js';
+    document.body.appendChild(a);
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43130225-8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-43130225-8');
+  </script>
+
+</body>
 </html>

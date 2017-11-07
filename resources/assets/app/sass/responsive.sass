@@ -1,4 +1,25 @@
 @media (max-width: $mobile-breakpoint)
+  .section
+    padding-top: 2em !important
+
+    &.slant
+      padding-top: 2.5em !important
+      margin-top: 2em !important
+
+      &::before
+        display: none !important
+
+      a.button
+        position: relative
+        width: 140px
+        top: auto
+
+      .features
+        margin: 0 !important
+
+      .preview-column
+        display: none !important
+
   hr
     margin: 0 2em 0 !important
     padding: 1.4em 0 0 !important
@@ -42,6 +63,15 @@
 
   hr
     padding: 2em 0 0 !important
+
+  .section
+    &.slant
+      h3
+        line-height: 2em !important
+        font-size: 1.2em !important
+
+      a.button
+        width: 100% !important
 
   .foot
     .columns

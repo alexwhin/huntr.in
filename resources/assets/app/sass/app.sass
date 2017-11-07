@@ -19,6 +19,105 @@ body
   padding: 0
   margin: 0
 
+  .container
+    max-width: 1152px
+    overflow: hidden
+
+  .section
+    background-color: #efefef
+    padding: 4.5em 0 1em
+    position: relative
+
+    &.slant
+      margin-top: 6em
+
+      &::before
+        content: ""
+        background-color: #efefef
+        position: absolute
+        width: 100%
+        height: 100%
+        top: auto
+        left: -5%
+        right: 0
+        bottom: 30px
+        transform: rotate(2deg)
+
+  .features
+    margin: 0 0 0 1.4em
+
+    h3
+      font-family: 'Roboto Slab', serif
+      margin: 0.4em 0 0.6em
+      font-size: 1.4em
+      line-height: 1.4em
+
+    ul
+      padding: 0
+      margin: 0
+
+      li
+        padding: 0 0 0 27px
+        position: relative
+        margin: 0 0 0.5em
+        font-size: 0.9em
+        color: #847f7f
+
+        &::before
+          content: ''
+          position: absolute
+          top: 6px
+          left: 0
+          height: 13px
+          width: 13px
+          border: 1px solid #d0cfcf
+          border-radius: 50%
+
+    a.button
+      text-transform: uppercase
+      border: 1px solid #cc4824
+      text-decoration: none
+      background: #da552f
+      margin: 2em 0 0 0
+      vertical-align: top
+      position: absolute
+      overflow: hidden
+      cursor: pointer
+      text-align: center
+      border-radius: 2px
+      line-height: 33px
+      font-weight: 500
+      padding: 0 15px
+      display: block
+      height: 36px
+      color: #fff
+      outline: 0
+      font-size: 0.9em
+      letter-spacing: 0
+
+  .preview-column
+    p
+      margin: 11px 60px 0 0
+      font-style: italic
+      font-size: 0.8em
+      color: #cbcaca
+      float: right
+
+      a
+        color: #cbcaca
+        font-weight: 600
+
+
+    .preview
+      box-shadow: 0 50px 100px rgba(50, 50, 93, 0.02), 0 15px 35px rgba(50, 50, 93, 0.01), 0 5px 15px rgba(0, 0, 0, 0.02)
+      background-color: #fdfdfd
+      border-radius: 3px
+      padding: 0.3em 3em 2em
+      margin: 0 3.2em 0 0
+      display: block
+      height: 380px
+      width: auto
+
   em.tablet-text
     font-style: normal
 
