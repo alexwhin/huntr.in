@@ -41,7 +41,7 @@ class ScrapeProduct extends Command
     {
 
         $products = Products::where('updated_at', '<', Carbon::now()
-                              ->subHours(3))
+                              ->subHours(1))
                               ->inRandomOrder()
                               ->get();
 
