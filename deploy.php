@@ -18,8 +18,8 @@
   host('production')
   ->hostname('165.227.107.164')
   ->user('root')
-  ->identityFile('~/.ssh/id_rsa')
   ->forwardAgent(true)
+  ->identityFile('~/.ssh/id_rsa')
   ->set('deploy_path', '/var/www/html');
 
   // Database update
