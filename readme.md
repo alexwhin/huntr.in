@@ -22,8 +22,8 @@ Source code for https://huntr.in/
 
 ## Deployment
 
-  npm run prod
-  dep deploy
+    npm run prod
+    dep deploy
 
 ## Credits
 
