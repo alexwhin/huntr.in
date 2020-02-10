@@ -1,13 +1,6 @@
-# Huntr.in 🙀
+# Huntr.in
 
 Source code for https://huntr.in/
-
-## Todo
-
-- [ ] Add Caching
-- [ ] Add Docker
-- [ ] Add CI/CD
-- [ ] Add Tests
 
 ## Installation
 
