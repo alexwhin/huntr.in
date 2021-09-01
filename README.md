@@ -1,6 +1,5 @@
 # Huntr.in
-
-Source code for https://huntr.in/
+![Homepage screenshot](https://github.com/alexwhin/huntr.in/blob/master/preview.jpeg?raw=true)
 
 ## Installation
 
@@ -17,7 +16,3 @@ Source code for https://huntr.in/
 
     npm run prod
     dep deploy
-
-## Credits
-
-Released under The MIT License originally developed by Alex Whinfield.
